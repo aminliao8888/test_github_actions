@@ -27,7 +27,7 @@ jobs:
         
       - name: save csv
         run: |
-          git config --global user.name "amin"
+          git config --global user.name "aminliao8888"
           git config --global user.email "aminliao888@gmail.com"
           git add news.csv
           git commit -m "更新鉅亨網新聞"
