@@ -27,9 +27,6 @@ jobs:
         
       - name: save csv
         run: |
-          git remote set-url origin https://aminliao8888@github.com/aminliao8888/test_github_actions.git
-          git config --global user.name "Amin"
-          git config --global user.email "white_5168@hotmail.com"
           git add news.csv
           git commit -m "更新鉅亨網新聞"
-          git push origin main
+          git push https://aminliao8888:${{secrets.ACCESS_GITHUB_TOKEN}}@github.com/aminliao8888/test_github_actions.git       
